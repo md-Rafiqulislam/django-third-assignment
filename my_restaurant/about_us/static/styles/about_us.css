@@ -1,0 +1,20 @@
+
+
+.img-container {
+    background: linear-gradient(to right, 
+            rgba(0, 0, 0, 0.1),
+            rgba(0, 0, 0, 0.7)
+        ), url("/static/images/img1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.div-width {
+    height: 300px;
+}
+
+
+.img-container h4 {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0. 9));
+}

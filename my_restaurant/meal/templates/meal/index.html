@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+    <title>Restaurant - select your meal</title>
+{% endblock %}
+
+
+{% block content %}
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row">
+                {% for meal in allMeals %}
+                    <div class="col-3 m-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src="{{ meal.strCategoryThumb }}" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title text-info"><span>{{meal.idCategory}} : </span>{{meal.strCategory}}</h5>
+                              <p class="meal.text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                              <a href="#" class="btn btn-primary">Order it now</a>
+                            </div>
+                          </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+{% endblock %}

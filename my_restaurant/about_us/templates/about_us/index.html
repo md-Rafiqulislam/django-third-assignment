@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+    <title>Restaurant - know About Us</title>
+{% endblock %}
+
+
+{% block styles %}
+    <link rel="stylesheet" href="{% static 'styles/about_us.css' %}">
+{% endblock %}
+
+
+{% block content %}
+    <div class="container-fluid">
+        <div class="container mt-5">
+            <div class="d-flex justify-content-between align-items-center gap-3">
+                <div class="col-6 img-container div-width rounded d-flex justify-content-center align-items-center">
+                    <h4 class="text-light">if you want to make your day<br>then you are in the right place</h4>
+                </div>
+                <div class="col-6 div-width">
+                    <p class="fs-6">Sure, here's a promotional text for a restaurant:
+
+                        "**Experience the Culinary Delight at Our Restaurant!**
+                        
+                        Step into our restaurant and embark on a unique gastronomic journey. Our menu, curated by top chefs, offers a variety of dishes that cater to diverse taste buds. Each dish is prepared with the freshest ingredients, ensuring an unforgettable dining experience.
+                        
+                        Our ambiance is designed to provide a warm and welcoming environment, making it a perfect place for both intimate dinners and larger gatherings. Our staff is dedicated to providing impeccable service, ensuring your dining experience is nothing short of perfect.
+                        
+                        Join us for a meal and let us take you on a culinary adventure that you'll want to relive over and over again. Book your table today and experience dining at its finest!"</p>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

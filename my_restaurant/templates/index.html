@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+<title>Restaurant - enjoy your food</title>
+{% endblock %}
+
+{% block styles %}
+    <link rel="stylesheet" href="{% static 'styles/home.css' %}">
+{% endblock %}
+
+{% block content %}
+    <h1 class="text-center fs-1 text-info mt-5 mb-5">welcome to fantasy restaurant</h1>
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row d-flex justify-content-center align-items-center ">
+                <div class="col-6 half-width border rounded">
+                    <p>A restaurant is a place where people go to enjoy a meal outside of their home. It is a hub of culinary exploration, offering a wide range of cuisines from different cultures and regions. The ambiance of a restaurant plays a crucial role in the dining experience, with elements such as decor, lighting, and music contributing to the overall mood. The quality of service is equally important, with attentive and courteous staff enhancing the customer’s experience. Restaurants also play a significant role in social life, serving as venues for celebrations, business meetings, and casual get-togethers. They are not just about food, but also about the experience of dining in a comfortable and enjoyable environment.</p>
+                </div>
+                <div class="col-6 half-width border rounded d-flex justify-content-center align-items-center">
+                    <img src="{% static 'images/img3.jpg' %}" alt="" class="img-home">
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
